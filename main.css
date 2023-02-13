@@ -1,0 +1,35 @@
+main {
+        font-family: jura;
+        color: rgb(86, 86, 120);
+        margin: 20px;
+}
+
+div {
+        /*height: 250px;*/
+        background-color: rgb(33, 32, 32);
+        color:rgb(255, 255, 255);
+        font-size: 15px;
+        margin: 50px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 5px;
+
+}
+
+.row {
+    background-color: aqua;
+    border: 1px solid rgb(33, 32, 32);
+    padding: 5px;
+    margin: 10px;
+}
+
+.col {
+    background-color: rgb(34, 39, 37);
+    border: 1px solid rgb(255, 255, 255);
+
+
+}
+

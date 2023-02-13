@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./main.css">
+        <meta charset="UTF-8">
+        <title>
+            Bootstrap 1 | Victor Moragues
+        </title>
+    </head>
+
+    <body>
+        <main>
+            <div>
+                <h1>Bootstrap 1</h1>
+            </div>
+
+            <h3>Agregar Bootstrap:</h3>
+            <a href="https://getbootstrap.com/" target="_blank">Ir a Bootstrap.</a>
+            <p>Ir a: Download y copiar en el head el contenido de: CDN via jsDelivr.
+            </p>
+
+            <h3>Tipos de contenedores:</h3>
+            <ul>
+                <li>.container. Ancho máximo fijo que depende del tamaño del dispositivo.</li>
+                <li>.container-fluid es responsivo y llena el 100% del ancho de la pantalla.</li>
+            </ul>
+
+            <div class="container">
+                .container
+            </div>
+
+            <div class="container-fluid">
+                .container-fluid
+            </div>
+
+            <div class="container-lg">
+                .container responsivo-lg
+            </div>
+            
+            <h3>Clases de la Grid y Breakpoints</h3>
+            <h4>Contenedor - filas - columnas</h4>
+            <ul>
+                <li>.container. Contenedor. Ejemplo:<pre>&ltdiv&gtclass="container"&gt&lt/div&gt</pre></li>
+                <li>.col. Columna. Ejemplo:<pre>&ltdiv&gtclass="col"&gt&lt/div&gt</pre></li>
+                <li>.row. Fila. Ejemplo:<pre>&ltdiv&gtclass="row"&gt&lt/div&gt</pre></li>
+                <li>.col-. Columna. </li>
+                <li>.col-xs-. <  576px. Representa el viewport.</li>
+                <li>.col-sm-. >= 576px.</li>
+                <li>.col-md-. >= 768px. </li>
+                <li>.col-lg-. >= 992px.</li>
+                <li>.col-xl-. >= 1200px.</li>
+                <li>.col-xxl-.>= 1400px.</li>
+            </ul>
+            <h3>Los elementos de una fila deben sumar 12. Pueden ocupar varias columnas.</h3>
+            
+            <div class="container-lg">
+                .container responsive-lg
+                <div class="col-sm-5">
+                    .col-sm-5
+                        <div class="col-sm-7">
+                            .col-sm-7
+                                <div class="col-sm-2">
+                                    .col-sm-2
+                                </div>
+
+                        </div>
+                </div>
+                
+            </div>
+
+
+            <h3>Otro ejemplo</h3>
+            
+            <div class="container">
+                contenedor principal
+                
+                <div class="row">
+
+                fila 1.
+                    <div class="col">
+                        columna 1.
+                    </div>
+                    <div class="col">
+                        columna 2.
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                fila 2.
+                    <div class="col">
+                        columna 1.
+                    </div>
+                    <div class="col">
+                        columna 2.
+                    </div>
+                    <div class="col">
+                        columna 3.
+                    </div>
+
+                </div>
+
+            </div>
+
+          
+            <b>Link a: </b><a href="https://www.youtube.com/watch?v=QCw0L6FupQ0" target="_blank">Tutorial bootstrap, 1:30'</a><br>
+            
+           
+                <footer>
+                    web development: VMV.2023.
+                </footer>
+
+           
+        </main>
+    </body>
+</html>
