@@ -4,6 +4,7 @@
         <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
         <link rel="stylesheet" href="./main.css">
         <meta charset="UTF-8">
         <title>
@@ -56,19 +57,17 @@
             </ul>
             <h3>Los elementos de una fila deben sumar 12. Pueden ocupar varias columnas.</h3>
             
-            <div class="container-lg">
+            <div class="container-lg div1">
                 .container responsive-lg
-                <div class="col-sm-5">
+                <div class="col-sm-5 div1">
                     .col-sm-5
-                        <div class="col-sm-7">
+                        <div class="col-sm-7 div1">
                             .col-sm-7
-                                <div class="col-sm-2">
+                                <div class="col-sm-2 div1">
                                     .col-sm-2
                                 </div>
-
                         </div>
                 </div>
-                
             </div>
 
 
@@ -106,15 +105,182 @@
 
             </div>
 
-          
-            <b>Link a: </b><a href="https://www.youtube.com/watch?v=QCw0L6FupQ0" target="_blank">Tutorial bootstrap, 1:30'</a><br>
-            
-           
-                <footer>
-                    web development: VMV.2023.
-                </footer>
+            <h3>Ejemplo breakpoints</h3>
+            <p>En dispositivos grandes ocupan la mitad(col-lg-6), al reducirse el tamaño 
+                varía una ocupará 4 columnas y la otra 6 columnas.<br>
+                De esta forma decidimos cómo se presentan los elementos dependiendo del dispositivo.
+            </p>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-6 columna">
+                        .col-sm-4 .col-lg-6
 
-           
+                    </div>
+
+                    <div class="col-sm-8 col-lg-6 columna">
+                        .col-sm-8 .col-lg-6
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h3>Componentes. Ejemplo Acordeón</h3>
+            <p> 
+                Son elementos HTML reutilizables. Ya vienen con un estilo determinado. Podemos utilizarlos directamente o personalizarlos.
+            </p>
+
+            <!--Bootstrap accordion basic-->
+            <div class="container">
+
+            
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Acordeón Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Acordeón Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Acordeón Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+                <h3><a href="https://icons.getbootstrap.com/" target="_blank">Iconos</a></h3>
+
+                <h4>icono sin modificar</h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+                  </svg>
+
+                  <i class="bi bi-emoji-smile-fill"></i>
+
+                <h4>icono modificado</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
+                    <path d="M8 12A3 8 6 1 0 8 0a8 8 0 0 0 0 120zM7 9.5C7 7.328 6.52 8 3 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+                  </svg>
+                  <br><br>
+
+            <h3>FLEXBOX</h3>
+
+            <div class="d-flex">
+                contenedor d-flex
+            </div>
+
+            <p>flex-direction: Establece el eje principal del contenedor y la dirección en la que
+                se colocarán los elementos.<br>
+                flex-direction: column. Los elementos se alinean verticalmente.
+                <ul>
+                    <li>row</li>
+                    <li>row-reverse</li>
+                    <li>column</li>
+                    <li>column-reverse</li>
+                </ul>
+                <h4>Propiedades:</h4>
+                <ul>
+                    <li><b>justify-content:</b> (propiedad CSS) define cómo se distribuyen los elementos en el eje principal.</li>
+                    <br>
+
+                    <h6>Alternativas para el valor <b>justify-content:</b></h6>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                        <li>space-evently</li>
+                    </ul><br>
+
+                    <h6>Equivalente de <b>justify-content</b> en Bootstrap, clases predeterminadas:</h6>
+                    <ul>
+                        <li>.justify-content-start</li>
+                        <li>.justify-content-end</li>
+                        <li>.justify-content-center</li>
+                        <li>.justify-content-between</li>
+                        <li>.justify-content-around</li>
+                        <li>.justify-content-evently</li>
+                    </ul><br>
+
+                    <h6><b>align-items</b> (propiedad CSS)</h6>
+                    <p>Define cómo se distribuyen los elementos en el eje perpendicular al eje principal.</p>
+                    <h6>Valores de align-items</h6>
+                    <ul>
+                        <li>flex.start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>baseline</li>
+                        <li>stretch</li>
+                    </ul><br>
+
+                    <h6>Equivalente de <b>align-items</b> en Bootstrap:</h6>
+                    <ul>
+                        <li>.align-items-start</li>
+                        <li>.align-items-end</li>
+                        <li>.align-items-center</li>
+                        <li>.align-items-baseline</li>
+                        <li>.align-items-stretch</li>
+                    </ul><br>
+
+                    <h6><b>flex-wrap</b> (propiedad CSS)</h6>
+                    <p>Determina si los elementos deben estar ajustados a una línea o
+                       si se les permite distribuirse en varias líneas.
+                    </p>
+                    <h6>Equivalente de <b>flex-wrap</b> en Bootstrap:</h6>
+                    <ul>
+                        <li>.flex-nowrap</li>
+                        <li>.flex-wrap</li>
+                        <li>.flex-wrap-reverse</li>
+                    </ul><br>
+
+
+                    <li>row-reverse</li>
+                    <li>column</li>
+                    <li>column-reverse</li>
+                </ul>
+            </p>
+
+                
+
+            
+
+          
+            <b>Link a: </b><a href="https://www.youtube.com/watch?v=QCw0L6FupQ0" target="_blank">Tutorial bootstrap, 2:09'</a><br>
+            
+            <div class="container text-center">
+                <footer>
+                    <i class="bi bi-activity"></i> web development: VMV. 2023.
+                </footer>
+            </div>
+                   
         </main>
     </body>
 </html>
