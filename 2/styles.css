@@ -1,0 +1,45 @@
+.div0 {
+
+    padding:40px;
+    font-family: 'Jura';
+    font-size: 22px;
+
+}
+
+.div1 {
+    background-color: rgb(33, 32, 32);
+    color:rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 40px;
+    font-family: 'Jura';
+    font-size: 22px;
+}
+
+.row1 {
+    padding: 60px;
+    font-family: 'Jura';
+    font-size: 22px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid blueviolet;
+    margin: 50px;
+
+}
+
+.col1 {
+    padding: 40px;
+    font-family: 'Jura';
+    font-size: 22px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid blueviolet;
+
+}
